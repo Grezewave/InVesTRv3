@@ -1,0 +1,11 @@
+Flask==2.2.2
+Flask_Cors==4.0.1
+google_api_python_client==2.123.0
+google_auth_oauthlib==1.2.0
+ipython==8.12.3
+ipython==8.10.0
+markdown2==2.4.13
+pandas==1.5.3
+protobuf==5.26.1
+Requests==2.31.0
+tkinterweb==3.23.9
