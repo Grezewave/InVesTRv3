@@ -2,7 +2,9 @@
 Application group to get information from google sheets and use AI to get insights about investments. The project stills under development and some features are incomplete.
 
 ## Overview
-This project is a chatbot application designed to provide investment insights using integration from Google Sheets and Google Gemini. The application consists of a Python Flask API for backend functionality and a React frontend for the user interface.
+This project is a chatbot application designed to provide investment insights using integration from Google Sheets and Google Gemini. You can provide your data directly from Google Sheets and ask InVesTR for insights of profit and other metrics. You can directly ask in any language and for any type of information about your data.
+
+A Python Flask API for backend functionality and a React frontend for the user interface are under development.
 
 The insights provided by Gemini is based in a prompt thats define how flat profit and percentage profit of a investment must be calculated, and how Gemini can provide insights from this definitions. Feel free to modify and test the prompt, located in service/src/utils/constants.py. In current state, it's necessary to reload the service when the sheet is changed, and it´s necessary to configure the conection with Google Sheets by itself. Improves will be implemented soon.
 
@@ -37,7 +39,7 @@ The insights provided by Gemini is based in a prompt thats define how flat profi
 ## How to run
 An easy way to test the application is running service/src/run.ipynb. This notebook explains step by step how to configure and test the application, and how it works.
 
-The notebook service/src/sample.ipynb contains a sample application to test without Google Sheets API, using only your Gemini API Key.
+The notebook service/src/sample.ipynb contains a sample application to test without Google Sheets API, using only your Gemini API Key and fictional data.
 
 
 ## Service sample
