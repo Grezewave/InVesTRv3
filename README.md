@@ -26,26 +26,36 @@ The insights provided by Gemini is based in a prompt thats define how flat profi
    ```
 4. Set up Google Sheets API credentials following the instructions in [Google Cloud docs](https://developers.google.com/sheets/api/quickstart/python?hl=pt-br). Download credentials, rename to secrets.json and put into credentials folder.
 5. Set up Google Gemini API credentials following the instructions in [Google Gemini docs](https://ai.google.dev/gemini-api/docs/quickstart?hl=pt-br&_gl=1*iiivu*_up*MQ..&gclid=CjwKCAjw9IayBhBJEiwAVuc3fu5nCfvDVWPXbLvhT15etQN7YMyqkDg3NFBbBms5iBUHGEp21nPf6RoCFPAQAvD_BwE). Export your api key to environment variables.
-6. Create a .env file, following the below model:
+6. Create a .env file inside credentials/ folder, following the below model:
     ```
     SHEET_ID={GoogleSheets sheet ID}
     RANGE_STRING_INVESTMENTS={page name for investments and range, ex: investment!A1:K999}
     RANGE_STRING_APPLICATIONS={page name for applications and range, ex: applications!A1:K999}
     RANGE_STRING_RETURNS={page name for returns and range, ex: returns!A1:K999}
     ```
-6. Navigate into service/src folder and start the Flask server:
+
+## How to run
+An easy way to test the application is running service/src/run.ipynb. This notebook explains step by step how to configure and test the application, and how it works.
+
+The notebook service/src/sample.ipynb contains a sample application to test without Google Sheets API, using only your Gemini API Key.
+
+
+## Service sample
+An structure of API and frontend is under development an also can be used and tested:
+
+1. Navigate into service/src folder and start the Flask server:
    ```
    python investr.py
    ```
-7. Navigate into chatbot directory and install Node.js dependencies:
+2. Navigate into chatbot directory and install Node.js dependencies:
    ```
    yarn install
    ```
-9. Start the React development server:
+3. Start the React development server:
    ```
    yarn start
    ```
-10. Access the application at `http://localhost:3000` in your web browser.
+4. Access the application at `http://localhost:3000` in your web browser.
 
 ## Usage
 - Upon accessing the application, users are greeted with the chatbot interface.
