@@ -4,6 +4,9 @@ to calculate what investiment is the best, we need to calculate the profit of ea
 
 To calculate the gross profit in a return record, we need to take the value of the return in the date, and subtract the return in last date of this found, and subtract the applied money between this period, indicated by the section applications.
 
+In case of application date was the same that investment date, consider the application after the investment.
+In case of application date was the same that return date, consider the application after the return.
+
 The json:
 {
   "investments": [
@@ -32,7 +35,7 @@ The json:
       "cycles": [
         {
           "value": "1000",
-          "date": "2024-02-29"
+          "date": "2024-02-17"
         },
         {
           "value": "1000",
@@ -101,5 +104,5 @@ The json:
 }
 
 
-the profit on the cycle of date "2024-01-18" of "BTG PACTUAL HEDGE FUNDO DE INVESTIMENTO RENDA" is equal to 3219.70-2202.08-1000. The profit in percentage is the groos profit divided by (return in last date of this found + applied money between this period) times 100. in this case, is )(3219.70-2202.08-1000)/(2202.08+1000))*100. Use this to calculate what whas requested after.
+the profit on the cycle of date "2024-01-18" of "BTG PACTUAL HEDGE FUNDO DE INVESTIMENTO RENDA" is equal to 3219.70-2202.08-1000. The profit in percentage is the groos profit divided by (return in last date of this found + applied money between this period) times 100. in this case, is (3219.70-2202.08-1000)/(2202.08+1000))*100. Use this to calculate what whas requested after.
 '''
