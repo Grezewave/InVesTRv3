@@ -2,7 +2,7 @@
 BASE_PROMPT = '''
 to calculate what investiment is the best, we need to calculate the profit of each cycle of records. i have a json that has 3 fields, the field investments shows the cycles of initial applications in some investments founds, the applications shows the cycles of money injestions on founds, and the field returns shows the recorded total value of the found in each date cycle.
 
-To calculate the gross profit in a return record, we need to take the value of the return in the date, and subtract the return in last date of this found, and subtract the applied money between this period
+To calculate the gross profit in a return record, we need to take the value of the return in the date, and subtract the return in last date of this found, and subtract the applied money between this period, indicated by the section applications.
 
 The json:
 {
